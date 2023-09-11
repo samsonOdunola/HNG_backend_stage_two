@@ -28,7 +28,8 @@ The following below shows an exapmle on the operations that can be performmed on
      - "name": (required) Specifies the name of the resource to create.
 
    * **Sample Request**
-     "https://my-task-two.onrender.com/api/?name="SAMPLE NAME""
+
+     -URL: "https://my-task-two.onrender.com/api/?name="SAMPLE NAME""
 
    **Sample Response**
 
@@ -55,7 +56,8 @@ The following below shows an exapmle on the operations that can be performmed on
      - "name": (required) Specifies the name of the resource to retrieve.
 
    * **Sample Request**
-     "https://my-task-two.onrender.com/api/?name="SAMPLE NAME""
+
+     -URL: "https://my-task-two.onrender.com/api/?name="SAMPLE NAME""
 
    **Sample Response**
 
@@ -82,9 +84,10 @@ The following below shows an exapmle on the operations that can be performmed on
      - "user_id" : (required) Specifies the ID of the resource to update
 
    * **Sample Request**
-     "https://my-task-two.onrender.com/api/:user_id="64fe300261081ce592704cbe""
 
-     - body:
+     - URL: "https://my-task-two.onrender.com/api/:user_id="64fe300261081ce592704cbe""
+
+     * body:
 
      ```JSON
      {
@@ -116,7 +119,7 @@ The following below shows an exapmle on the operations that can be performmed on
      - "name" : (required) Specifies the name of the the resource to be deleted
 
    * **Sample Request**
-     "https://my-task-two.onrender.com/api/?name="SAMPLE NAME""
+     - URL: "https://my-task-two.onrender.com/api/?name="SAMPLE NAME""
 
    **Sample Response:**
 
