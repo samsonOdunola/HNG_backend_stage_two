@@ -2,11 +2,11 @@
 
 ## Introduction
 
-Welcome to the documentation for the **Your API Name**. This API performs CRUD operations .
+Welcome to the documentation for the **HNG CRUD API**. This API performs CRUD operations .
 
 ## Base URL
 
-The base URL for all API endpoints is:localhost:3000/api
+The base URL for all API endpoints is: API[https://my-task-two.onrender.com/api]
 
 ## Making Requests
 
@@ -22,6 +22,9 @@ The following below shows an exapmle on the operations that can be performmed on
 
    - Query Parameters:
      - "name": (required) Specifies the name of the resource to create.
+
+   * **Sample Request**
+     "https://my-task-two.onrender.com/api/?name="SAMPLE NAME""
 
    **Sample Response**
 
@@ -47,6 +50,9 @@ The following below shows an exapmle on the operations that can be performmed on
    - Query Parameters:
      - "name": (required) Specifies the name of the resource to retrieve.
 
+   * **Sample Request**
+     "https://my-task-two.onrender.com/api/?name="SAMPLE NAME""
+
    **Sample Response**
 
    ```JSON
@@ -71,7 +77,11 @@ The following below shows an exapmle on the operations that can be performmed on
 
      - "user_id" : (required) Specifies the ID of the resource to update
 
-   * body:
+   * **Sample Request**
+     "https://my-task-two.onrender.com/api/:user_id="64fe300261081ce592704cbe""
+
+     - body:
+
      ```JSON
      {
         "name":"NEW_NAME"
@@ -100,6 +110,9 @@ The following below shows an exapmle on the operations that can be performmed on
    * Query Parameters:
 
      - "name" : (required) Specifies the name of the the resource to be deleted
+
+   * **Sample Request**
+     "https://my-task-two.onrender.com/api/?name="SAMPLE NAME""
 
    **Sample Response:**
 
