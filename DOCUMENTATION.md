@@ -57,7 +57,39 @@ The following below shows an exapmle on the operations that can be performmed on
    }
    ```
 
-3. **Delete a Resource**
+3. **Update a Resource**
+
+   - Endpoint:"/{user_id}"
+
+   * Content-Type: application/json
+
+   * HTTP Method: "PUT"
+
+   * Description: Update a parameter in a resource
+
+   * Path Parameters:
+
+     - "user_id" : (required) Specifies the ID of the resource to update
+
+   * body:
+     ```JSON
+     {
+        "name":"NEW_NAME"
+     }
+     ```
+
+   **Sample Response:**
+
+   ```JSON
+   {
+   "_id": "64fe300261081ce592704cbe",
+    "name": "NEW_NAME",
+    "__v": 0
+   }
+
+   ```
+
+4. **Delete a Resource**
 
    - Endpoint:"/"
 
