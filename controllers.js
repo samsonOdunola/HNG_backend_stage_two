@@ -1,5 +1,6 @@
 const userModel = require("./models");
 const addName = async (req, res) => {
+  res.setHeader("Content-Type", "application/json");
   try {
     const name = req.query.name;
 
@@ -18,6 +19,7 @@ const addName = async (req, res) => {
   }
 };
 const editName = async (req, res) => {
+  res.setHeader("Content-Type", "application/json");
   try {
     const id = req.params.user_id;
     const newName = req.body.name;
@@ -41,6 +43,7 @@ const editName = async (req, res) => {
   }
 };
 const getName = async (req, res) => {
+  res.setHeader("Content-Type", "application/json");
   try {
     const name = req.query.name;
 
@@ -62,6 +65,7 @@ const getName = async (req, res) => {
   }
 };
 const deleteName = async (req, res) => {
+  res.setHeader("Content-Type", "application/json");
   try {
     const name = req.query.name;
     try {
