@@ -29,7 +29,7 @@ The following below shows an exapmle on the operations that can be performmed on
 
    * **Sample Request**
 
-     -URL: "https://my-task-two.onrender.com/api/?name="SAMPLE NAME""
+     -URL: "https://my-task-two.onrender.com/api/?name="SAMPLE_NAME""
 
    **Sample Response**
 
@@ -57,7 +57,7 @@ The following below shows an exapmle on the operations that can be performmed on
 
    * **Sample Request**
 
-     -URL: "https://my-task-two.onrender.com/api/?name="SAMPLE NAME""
+     -URL: "https://my-task-two.onrender.com/api/?name="SAMPLE_NAME""
 
    **Sample Response**
 
@@ -119,7 +119,7 @@ The following below shows an exapmle on the operations that can be performmed on
      - "name" : (required) Specifies the name of the the resource to be deleted
 
    * **Sample Request**
-     - URL: "https://my-task-two.onrender.com/api/?name="SAMPLE NAME""
+     - URL: "https://my-task-two.onrender.com/api/?name="SAMPLE_NAME""
 
    **Sample Response:**
 
