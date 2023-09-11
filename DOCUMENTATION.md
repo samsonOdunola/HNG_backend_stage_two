@@ -8,6 +8,10 @@ Welcome to the documentation for the **HNG CRUD API**. This API performs CRUD op
 
 The base URL for all API endpoints is: API[https://my-task-two.onrender.com/api]
 
+## UML Diagram
+
+Link [https://lucid.app/lucidchart/aaa14333-3d0f-41b1-be2d-5b381f8e5f01/edit?viewport_loc=-895%2C-482%2C4110%2C1962%2C0_0&invitationId=inv_98ad4374-9e92-4fe7-b72a-8ea1fde73870]
+
 ## Making Requests
 
 The following below shows an exapmle on the operations that can be performmed on this API and how to perform operations.
