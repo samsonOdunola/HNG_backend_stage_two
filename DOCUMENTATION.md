@@ -12,72 +12,70 @@ The base URL for all API endpoints is:localhost:3000/api
 
 The following below shows an exapmle on the operations that can be performmed on this API and how to perform operations.
 
-1. **Create a new Resource**
+### **Create a new Resource**
 
-   - EndPoint: "/"
+- EndPoint: "/"
 
-   - HTTP Method: **POST**
+- HTTP Method: **POST**
 
-   - Description: Create a new Resource.
+- Description: Create a new Resource.
 
-   - Query Parameters:
-     - "name": (required) Specifies the name of the resource to create.
+- Query Parameters:
+  - "name": (required) Specifies the name of the resource to create.
 
-   **Sample Response**
+**Sample Response**
 
-   ```JSON
-   {
-   "name": "SAMPLE_NAME",
-   "_id": "64fee36c0accda750f8d61ce",
-   "__v": 0
-   }
-   ```
+```JSON
+{
+"name": "SAMPLE_NAME",
+"_id": "64fee36c0accda750f8d61ce",
+"__v": 0
+}
+```
 
-   **Limitations**
-   The name parameter is a unique identifier so passing in a duplicate name will return an error.
+**Limitations**
+The name parameter is a unique identifier so passing in a duplicate name will return an error.
 
-2. **Get a Resource**
+### **Get a Resource**
 
-   - EndPoint: "/"
+- EndPoint: "/"
 
-   - HTTP Method: **GET**
+- HTTP Method: **GET**
 
-   - Description: Gets a speccific resource.
+- Description: Gets a speccific resource.
 
-   - Query Parameters:
-     - "name": (required) Specifies the name of the resource to retrieve.
+- Query Parameters:
+  - "name": (required) Specifies the name of the resource to retrieve.
 
-   **Example Response**
+**Sample Response**
 
-   ```JSON
-   {
-   "_id": "64fee36c0accda750f8d61ce",
-   "name": "SAMPLE_NAME",
-   "__v": 0
-   }
-   ```
+```JSON
+{
+"_id": "64fee36c0accda750f8d61ce",
+"name": "SAMPLE_NAME",
+"__v": 0
+}
+```
 
-3. **Delete's a Resource**
+### **Delete's a Resource**
 
-   - Endpoint:"/"
+- Endpoint:"/"
 
-   * HTTP Method: "DELETE"
+* HTTP Method: "DELETE"
 
-   * Description: Delete's a specific resource
+* Description: Delete's a specific resource
 
-   * Query Parameters:
+* Query Parameters:
 
-     - "name" : (required) Specifies the name of the the resource to be deleted
+  - "name" : (required) Specifies the name of the the resource to be deleted
 
-   - **Example Response:**
+**Sample Response:**
 
-     - Description: A JSON object caontaining the total number of users deleted
-
-     ```JSON
-     {
-     "users_deleted": 1
-     }
-     ```
+```JSON
+{
+ "users_deleted": 1
+}
+```
 
 ## Error Handling
 
