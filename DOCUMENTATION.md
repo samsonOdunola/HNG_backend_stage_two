@@ -40,7 +40,7 @@ The following below shows an exapmle on the operations that can be performmed on
 
    ```JSON
    {
-   "name": "SAMPLE_NAME",
+   "name": "NAME",
    "_id": "64fee36c0accda750f8d61ce",
    "__v": 0
    }
