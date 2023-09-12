@@ -19,11 +19,30 @@ You are to build a simple REST API capable of CRUD operations on a "person" reso
 
   - Link[https://lucid.app/lucidchart/aaa14333-3d0f-41b1-be2d-5b381f8e5f01/edit?viewport_loc=-895%2C-482%2C4110%2C1962%2C0_0&invitationId=inv_98ad4374-9e92-4fe7-b72a-8ea1fde73870]
 
-* **How to run application**
+## Installation
 
-  - Install dependencies:
-    - Navigate to the root of the repository.
-    - Run the command "npm install" this will install all the dependencies needed for the project
-  - Start Server:
-    - start the server with the command "node index.js"
-    - The server will be hosted locally on your [machine](http://localhost:3000) at port 3000.
+1. Clone the repository to your local machine.
+
+```bash
+git clone https://github.com/samsonOdunola/HNG_backend_stage_two.git
+```
+
+2. Navigate to the project directory.
+
+```bash
+cd HNG_backend_stage_two
+```
+
+3. Install the required dependencies.
+
+```bash
+npm install
+```
+
+4. Configure your database connection by editing the `config.js` file to match your database credentials.
+
+5. Start the server.
+
+```bash
+npm run dev
+```
