@@ -49,4 +49,4 @@ npm run dev
 
 ## Endpoints
 
-Read [Documnetation](https://github.com/samsonOdunola/HNG_backend_stage_two/blob/master/DOCUMENTATION.md)
+Read [Documentation](https://github.com/samsonOdunola/HNG_backend_stage_two/blob/master/DOCUMENTATION.md)
