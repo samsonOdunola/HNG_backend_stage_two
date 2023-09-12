@@ -24,12 +24,17 @@ The following below shows an exapmle on the operations that can be performmed on
 
    - Description: Create a new Resource.
 
-   - Query Parameters:
-     - "name": (required) Specifies the name of the resource to create.
-
    * **Sample Request**
 
-     -URL: "https://my-task-two.onrender.com/api/?name="SAMPLE_NAME""
+     -URL: "https://my-task-two.onrender.com/api"
+
+     - body:
+
+       ```JSON
+       {
+           "name":"NAME"
+       }
+       ```
 
    **Sample Response**
 
@@ -46,18 +51,19 @@ The following below shows an exapmle on the operations that can be performmed on
 
 2. **Get a Resource**
 
-   - EndPoint: "/"
+   - EndPoint: "/{user_id}"
 
    - HTTP Method: **GET**
 
    - Description: Gets a speccific resource.
 
-   - Query Parameters:
-     - "name": (required) Specifies the name of the resource to retrieve.
+   * Path Parameters:
+
+     - "user_id" : (required) Specifies the ID of the resource to retrieve
 
    * **Sample Request**
 
-     -URL: "https://my-task-two.onrender.com/api/?name="SAMPLE_NAME""
+     -URL: "https://my-task-two.onrender.com/api/:user_id"
 
    **Sample Response**
 
@@ -85,7 +91,7 @@ The following below shows an exapmle on the operations that can be performmed on
 
    * **Sample Request**
 
-     - URL: "https://my-task-two.onrender.com/api/:user_id="64fe300261081ce592704cbe""
+     - URL: "https://my-task-two.onrender.com/api/:user_id"
 
      * body:
 
@@ -108,24 +114,26 @@ The following below shows an exapmle on the operations that can be performmed on
 
 4. **Delete a Resource**
 
-   - Endpoint:"/"
+   - Endpoint:"/{user_id}"
 
    * HTTP Method: "DELETE"
 
    * Description: Delete's a specific resource
 
-   * Query Parameters:
+   * Path Parameters:
 
-     - "name" : (required) Specifies the name of the the resource to be deleted
+     - "user_id" : (required) Specifies the ID of the resource to delete
 
    * **Sample Request**
-     - URL: "https://my-task-two.onrender.com/api/?name="SAMPLE_NAME""
+     - URL: "https://my-task-two.onrender.com/api/:user_id"
 
    **Sample Response:**
 
    ```JSON
    {
-    "users_deleted": 1
+    "_id": "650085fd05ccdc7719b311e8",
+    "name": "John Mary",
+    "__v": 0
    }
    ```
 

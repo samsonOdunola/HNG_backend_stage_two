@@ -2,11 +2,11 @@ const userModel = require("./models");
 const addName = async (req, res) => {
   res.setHeader("Content-Type", "application/json");
   try {
-    const name = req.query.name;
+    const name = req.body.name;
 
     try {
       if (!name) {
-        throw new Error("Invalid name");
+        throw new Error("Invalid entry");
       }
     } catch (err) {
       return res.status(400).json({ error: err.message });
@@ -25,7 +25,7 @@ const editName = async (req, res) => {
     const newName = req.body.name;
     try {
       if (!id) {
-        throw new Error("Invalid name");
+        throw new Error("Invalid entry");
       }
     } catch (err) {
       return res.status(400).json({ error: err.message });
@@ -45,17 +45,17 @@ const editName = async (req, res) => {
 const getName = async (req, res) => {
   res.setHeader("Content-Type", "application/json");
   try {
-    const name = req.query.name;
+    const id = req.params.user_id;
 
     try {
-      if (!name) {
-        throw new Error("Invalid name");
+      if (!id) {
+        throw new Error("Invalid entry");
       }
     } catch (err) {
       return res.status(400).json({ error: err.message });
     }
 
-    const user = await userModel.findOne({ name: name });
+    const user = await userModel.findOne({ _id: id });
     if (!user) {
       return res.status(404).json({ error: "User not found" });
     }
@@ -67,22 +67,23 @@ const getName = async (req, res) => {
 const deleteName = async (req, res) => {
   res.setHeader("Content-Type", "application/json");
   try {
-    const name = req.query.name;
+    const id = req.params.user_id;
     try {
-      if (!name) {
-        throw new Error("Invalid name");
+      if (!id) {
+        throw new Error("Invalid entry");
       }
     } catch (err) {
       return res.status(400).json({ error: err.message });
     }
+    const user = await userModel.findOne({ _id: id });
 
-    const deletedUsers = await userModel.deleteOne({ name: name });
+    const deletedUsers = await userModel.deleteOne({ _id: id });
 
     if (deletedUsers.deletedCount === 0) {
       return res.status(404).json({ error: "User Not found" });
     }
 
-    return res.status(200).json({ users_deleted: deletedUsers.deletedCount });
+    return res.status(200).json(user);
   } catch (err) {
     return res.status(400).json({ error: err.message });
   }
